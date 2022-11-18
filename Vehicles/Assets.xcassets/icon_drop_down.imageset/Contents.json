@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "3017945_arrow_declining_descending_down_downward_icon (1) copy 2.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "3017945_arrow_declining_descending_down_downward_icon (1) copy 3.png",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "3017945_arrow_declining_descending_down_downward_icon (1) copy.png",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
