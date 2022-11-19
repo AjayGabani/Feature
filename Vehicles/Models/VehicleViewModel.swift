@@ -36,6 +36,14 @@ class VehicleViewModel {
         }
         return arrVehiclesList
     }
+    
+    func isNumberValid(number: Int32) -> Bool {
+        if number > 0 && number < 101 {
+            return true
+        }
+        
+        return false
+    }
 }
 
 struct getVehicleListRequest: Codable {

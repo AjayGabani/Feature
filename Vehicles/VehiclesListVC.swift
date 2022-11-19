@@ -68,8 +68,12 @@ class VehiclesListVC: UIViewController, UITableViewDataSource, UITableViewDelega
     @IBAction func btnGetListTapped(_ sender: Any) {
         self.view.endEditing(true)
         if let sizeOfData = Int32(txtNumberOfVehicles.text!) {
-            objVehicleViewModel.getVehiclesList(size: sizeOfData)
-            setupBinderForVehicleListAPI()
+            if objVehicleViewModel.isNumberValid(number: sizeOfData) {
+                objVehicleViewModel.getVehiclesList(size: sizeOfData)
+                setupBinderForVehicleListAPI()
+            } else {
+                objCommonFunctions.showAlertMessageWithNoAction(message: "Please insert number between 1 and 100.", forViewController: self)
+            }
         } else {
             objCommonFunctions.showAlertMessageWithNoAction(message: "Please insert valid number.", forViewController: self)
         }
