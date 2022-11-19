@@ -12,7 +12,7 @@ class CommonFunctions {
     func showAlertMessageWithNoAction(message: String, forViewController: UIViewController) {
         let strAppName = "Vehicles List"
         let alert = UIAlertController(title: strAppName, message: message, preferredStyle: UIAlertController.Style.alert)
-        alert.addAction(UIAlertAction(title: "Retry", style: .cancel, handler: { (_) in
+        alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: { (_) in
              }))
         forViewController.present(alert, animated: true, completion: nil)
     }
