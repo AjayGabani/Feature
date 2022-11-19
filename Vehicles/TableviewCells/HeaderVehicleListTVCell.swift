@@ -20,6 +20,7 @@ class HeaderVehicleListTVCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
+    //MARK: Nib methods
     class var nib: UINib {
         return UINib(nibName:"HeaderVehicleListTVCell", bundle: nil)
     }

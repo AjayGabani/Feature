@@ -28,4 +28,8 @@ class CommonFunctions {
         forViewController.navigationItem.scrollEdgeAppearance = appearance
         forViewController.navigationItem.compactAppearance = appearance
     }
+    
+    func getViewBackGroundColor() -> UIColor {
+        return UIColor(red: 173/255.0, green: 216/255.0, blue: 230/255.0, alpha: 1)
+    }
 }

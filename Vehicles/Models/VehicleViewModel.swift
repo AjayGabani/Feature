@@ -12,6 +12,11 @@ class VehicleViewModel {
     @Published var vehicleListSize: String = "1"
     var error: ObservableObject<String?> = ObservableObject(nil)
     var arrVehiclesList: [Vehicle]!
+    let maxRangeForList = 100
+    let minRangeForList = 1
+    let intCarbonEmissionFirstThreashhold: Int! = 5000
+    let carbonEmissionBeforeThreshholdPoint = 1.0
+    let carbonEmissionAfterThreshholdPoint = 1.5
     func getVehiclesList(size: Int32) {
         APIServices.shared.callGetVehiclesList(size: size, success: { result in
             if let response = result {
@@ -38,11 +43,24 @@ class VehicleViewModel {
     }
     
     func isNumberValid(number: Int32) -> Bool {
-        if number > 0 && number < 101 {
+        if number >= minRangeForList && number <= maxRangeForList {
             return true
         }
         
         return false
+    }
+    
+    func calculateEstimatedCarbonEmission(kilometrage: Int) -> Double {
+        if kilometrage <= intCarbonEmissionFirstThreashhold {
+            return Double(kilometrage)*carbonEmissionBeforeThreshholdPoint
+        } else {
+            var dblTotalCarbonEmiision = 0.0
+            dblTotalCarbonEmiision = dblTotalCarbonEmiision + Double(intCarbonEmissionFirstThreashhold)
+            let intRemainingKilometrage = kilometrage - intCarbonEmissionFirstThreashhold
+            dblTotalCarbonEmiision = dblTotalCarbonEmiision + (Double(intRemainingKilometrage)*carbonEmissionAfterThreshholdPoint)
+            
+            return dblTotalCarbonEmiision
+        }
     }
 }
 

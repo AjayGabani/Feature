@@ -33,6 +33,8 @@
 		5BBDF08029286CF400E55B67 /* VehicleDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BBDF07F29286CF400E55B67 /* VehicleDetailsVC.swift */; };
 		5BBDF0832928793100E55B67 /* VehicleDetailsTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BBDF0812928793100E55B67 /* VehicleDetailsTVCell.swift */; };
 		5BBDF0842928793100E55B67 /* VehicleDetailsTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BBDF0822928793100E55B67 /* VehicleDetailsTVCell.xib */; };
+		5BBDF086292894B500E55B67 /* VehicleCarbonEmissionDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BBDF085292894B500E55B67 /* VehicleCarbonEmissionDetailsVC.swift */; };
+		5BBDF0882928954C00E55B67 /* VehicleDetailsPagesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BBDF0872928954C00E55B67 /* VehicleDetailsPagesVC.swift */; };
 		762D46F380AA73F552EE3BDB /* Pods_VehiclesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 673CE9BA41FE0218B991A949 /* Pods_VehiclesTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -85,6 +87,8 @@
 		5BBDF07F29286CF400E55B67 /* VehicleDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleDetailsVC.swift; sourceTree = "<group>"; };
 		5BBDF0812928793100E55B67 /* VehicleDetailsTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleDetailsTVCell.swift; sourceTree = "<group>"; };
 		5BBDF0822928793100E55B67 /* VehicleDetailsTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VehicleDetailsTVCell.xib; sourceTree = "<group>"; };
+		5BBDF085292894B500E55B67 /* VehicleCarbonEmissionDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleCarbonEmissionDetailsVC.swift; sourceTree = "<group>"; };
+		5BBDF0872928954C00E55B67 /* VehicleDetailsPagesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleDetailsPagesVC.swift; sourceTree = "<group>"; };
 		656A308CBE89DD0329994367 /* Pods-Vehicles.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vehicles.debug.xcconfig"; path = "Target Support Files/Pods-Vehicles/Pods-Vehicles.debug.xcconfig"; sourceTree = "<group>"; };
 		673CE9BA41FE0218B991A949 /* Pods_VehiclesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VehiclesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E2B6830959915E47A5F3AF9 /* Pods_Vehicles.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Vehicles.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -152,6 +156,8 @@
 				5BBDF0322926C8E600E55B67 /* AppDelegate.swift */,
 				5BBDF0342926C8E600E55B67 /* SceneDelegate.swift */,
 				5BBDF07F29286CF400E55B67 /* VehicleDetailsVC.swift */,
+				5BBDF0872928954C00E55B67 /* VehicleDetailsPagesVC.swift */,
+				5BBDF085292894B500E55B67 /* VehicleCarbonEmissionDetailsVC.swift */,
 				5BBDF0362926C8E600E55B67 /* VehiclesListVC.swift */,
 				5BBDF0382926C8E600E55B67 /* Main.storyboard */,
 				5BBDF03B2926C8E800E55B67 /* Assets.xcassets */,
@@ -480,9 +486,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				5BBDF08029286CF400E55B67 /* VehicleDetailsVC.swift in Sources */,
+				5BBDF086292894B500E55B67 /* VehicleCarbonEmissionDetailsVC.swift in Sources */,
 				5BBDF0722926FF5A00E55B67 /* Vehicle.swift in Sources */,
 				5BBDF07B2927250500E55B67 /* SortDropDownTVCell.swift in Sources */,
 				5BBDF0832928793100E55B67 /* VehicleDetailsTVCell.swift in Sources */,
+				5BBDF0882928954C00E55B67 /* VehicleDetailsPagesVC.swift in Sources */,
 				5BBDF06F2926FE3F00E55B67 /* VehicleViewModel.swift in Sources */,
 				5BBDF0692926ED8B00E55B67 /* VehicleListTVCell.swift in Sources */,
 				5BBDF074292701E400E55B67 /* APIManager.swift in Sources */,

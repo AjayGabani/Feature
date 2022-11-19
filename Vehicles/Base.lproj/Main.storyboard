@@ -137,6 +137,87 @@
             </objects>
             <point key="canvasLocation" x="918.84057971014499" y="93.75"/>
         </scene>
+        <!--Vehicle Details PagesVC-->
+        <scene sceneID="E3A-J1-Lak">
+            <objects>
+                <pageViewController storyboardIdentifier="VehicleDetailsPagesVC" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" doubleSided="YES" id="fBp-t1-8NO" customClass="VehicleDetailsPagesVC" customModule="Vehicles" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RZd-g0-J7d" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1809" y="94"/>
+        </scene>
+        <!--Vehicle Carbon Emission DetailsVC-->
+        <scene sceneID="oIE-vy-wso">
+            <objects>
+                <viewController storyboardIdentifier="VehicleCarbonEmissionDetailsVC" id="kks-hX-CcM" customClass="VehicleCarbonEmissionDetailsVC" customModule="Vehicles" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gaU-Vx-bJ9">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kq1-Ix-Olm">
+                                <rect key="frame" x="15" y="59" width="384" height="788"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Estimated Carbon Emission Details :" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="geM-LP-9a4">
+                                        <rect key="frame" x="10" y="10" width="364" height="23"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pjp-aX-eHW">
+                                        <rect key="frame" x="10" y="53" width="364" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Estimated Carbon Emission :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZGj-dU-Zr2">
+                                        <rect key="frame" x="10" y="84" width="364" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5oa-g8-Qhd">
+                                        <rect key="frame" x="10" y="113" width="364" height="0.0"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="5oa-g8-Qhd" firstAttribute="top" secondItem="ZGj-dU-Zr2" secondAttribute="bottom" constant="8" symbolic="YES" id="1HG-LX-C0x"/>
+                                    <constraint firstItem="Pjp-aX-eHW" firstAttribute="top" secondItem="geM-LP-9a4" secondAttribute="bottom" constant="20" id="29e-19-Sz3"/>
+                                    <constraint firstAttribute="trailing" secondItem="Pjp-aX-eHW" secondAttribute="trailing" constant="10" id="5dq-gG-cmt"/>
+                                    <constraint firstItem="geM-LP-9a4" firstAttribute="leading" secondItem="Kq1-Ix-Olm" secondAttribute="leading" constant="10" id="IwJ-Q5-nLq"/>
+                                    <constraint firstAttribute="trailing" secondItem="5oa-g8-Qhd" secondAttribute="trailing" constant="10" id="XYH-P5-h2a"/>
+                                    <constraint firstAttribute="trailing" secondItem="ZGj-dU-Zr2" secondAttribute="trailing" constant="10" id="aDW-Di-qpp"/>
+                                    <constraint firstItem="5oa-g8-Qhd" firstAttribute="leading" secondItem="Kq1-Ix-Olm" secondAttribute="leading" constant="10" id="gWM-Ff-pAc"/>
+                                    <constraint firstItem="ZGj-dU-Zr2" firstAttribute="leading" secondItem="Kq1-Ix-Olm" secondAttribute="leading" constant="10" id="iJc-ZR-gPY"/>
+                                    <constraint firstItem="Pjp-aX-eHW" firstAttribute="leading" secondItem="Kq1-Ix-Olm" secondAttribute="leading" constant="10" id="kSG-M0-aK9"/>
+                                    <constraint firstItem="ZGj-dU-Zr2" firstAttribute="top" secondItem="Pjp-aX-eHW" secondAttribute="bottom" constant="10" id="qCw-HG-yN0"/>
+                                    <constraint firstItem="geM-LP-9a4" firstAttribute="top" secondItem="Kq1-Ix-Olm" secondAttribute="top" constant="10" id="wNB-og-gX8"/>
+                                    <constraint firstAttribute="trailing" secondItem="geM-LP-9a4" secondAttribute="trailing" constant="10" id="xE6-RG-guo"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Dqo-3q-mMQ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Kq1-Ix-Olm" firstAttribute="leading" secondItem="Dqo-3q-mMQ" secondAttribute="leading" constant="15" id="1i7-mH-eFh"/>
+                            <constraint firstItem="Dqo-3q-mMQ" firstAttribute="trailing" secondItem="Kq1-Ix-Olm" secondAttribute="trailing" constant="15" id="aSC-B1-ifo"/>
+                            <constraint firstItem="Dqo-3q-mMQ" firstAttribute="bottom" secondItem="Kq1-Ix-Olm" secondAttribute="bottom" constant="15" id="bBF-wm-ljE"/>
+                            <constraint firstItem="Kq1-Ix-Olm" firstAttribute="top" secondItem="Dqo-3q-mMQ" secondAttribute="top" constant="15" id="zW0-3e-dfg"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="lblEstimatedCarbonEmission" destination="ZGj-dU-Zr2" id="HY8-04-DVZ"/>
+                        <outlet property="lblEstimatedCarbonEmissionValue" destination="5oa-g8-Qhd" id="08q-wX-egJ"/>
+                        <outlet property="lblTotalKilometrage" destination="Pjp-aX-eHW" id="H5U-fl-MkV"/>
+                        <outlet property="viewMainContainer" destination="Kq1-Ix-Olm" id="eJ1-CW-Hww"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cwY-u0-MPt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2762.3188405797105" y="485.49107142857139"/>
+        </scene>
         <!--Vehicle DetailsVC-->
         <scene sceneID="88D-9I-H95">
             <objects>
@@ -146,10 +227,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UQP-h0-Ncz">
-                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <rect key="frame" x="15" y="103" width="384" height="744"/>
                                 <subviews>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="zCH-39-P0S">
-                                        <rect key="frame" x="10" y="45" width="394" height="719"/>
+                                        <rect key="frame" x="10" y="45" width="364" height="689"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <connections>
                                             <outlet property="dataSource" destination="Rww-SZ-FCI" id="Xy7-EZ-2Tt"/>
@@ -157,7 +238,7 @@
                                         </connections>
                                     </tableView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Car Details :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7cc-pY-n9H">
-                                        <rect key="frame" x="10" y="10" width="394" height="25"/>
+                                        <rect key="frame" x="10" y="10" width="364" height="25"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -177,22 +258,23 @@
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="zRj-96-RJE"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="zRj-96-RJE" firstAttribute="trailing" secondItem="UQP-h0-Ncz" secondAttribute="trailing" id="53R-Rg-w7W"/>
-                            <constraint firstItem="zRj-96-RJE" firstAttribute="bottom" secondItem="UQP-h0-Ncz" secondAttribute="bottom" id="hd6-pq-8LG"/>
-                            <constraint firstItem="UQP-h0-Ncz" firstAttribute="leading" secondItem="zRj-96-RJE" secondAttribute="leading" id="isw-OH-dV7"/>
-                            <constraint firstItem="UQP-h0-Ncz" firstAttribute="top" secondItem="zRj-96-RJE" secondAttribute="top" id="rg6-EW-APJ"/>
+                            <constraint firstItem="zRj-96-RJE" firstAttribute="trailing" secondItem="UQP-h0-Ncz" secondAttribute="trailing" constant="15" id="53R-Rg-w7W"/>
+                            <constraint firstItem="zRj-96-RJE" firstAttribute="bottom" secondItem="UQP-h0-Ncz" secondAttribute="bottom" constant="15" id="hd6-pq-8LG"/>
+                            <constraint firstItem="UQP-h0-Ncz" firstAttribute="leading" secondItem="zRj-96-RJE" secondAttribute="leading" constant="15" id="isw-OH-dV7"/>
+                            <constraint firstItem="UQP-h0-Ncz" firstAttribute="top" secondItem="zRj-96-RJE" secondAttribute="top" constant="15" id="rg6-EW-APJ"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="VCB-YL-nRa"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
                         <outlet property="tblVehicleDetails" destination="zCH-39-P0S" id="2Zy-2j-s7F"/>
+                        <outlet property="viewMainContainer" destination="UQP-h0-Ncz" id="CjA-pZ-H04"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lsl-DB-o7M" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1820" y="94"/>
+            <point key="canvasLocation" x="2767" y="-200"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="F5d-Eu-mS9">

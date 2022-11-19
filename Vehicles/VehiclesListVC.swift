@@ -120,7 +120,7 @@ class VehiclesListVC: UIViewController, UITableViewDataSource, UITableViewDelega
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let objVehicleDetails = storyboard?.instantiateViewController(withIdentifier: "VehicleDetailsVC") as! VehicleDetailsVC
+        let objVehicleDetails = storyboard?.instantiateViewController(withIdentifier: "VehicleDetailsPagesVC") as! VehicleDetailsPagesVC
         objVehicleDetails.objVehicle = self.arrVehiclesList?[indexPath.row]
         self.navigationController?.pushViewController(objVehicleDetails, animated: true)
     }

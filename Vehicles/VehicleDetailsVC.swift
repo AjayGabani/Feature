@@ -13,13 +13,16 @@ class VehicleDetailsVC: UIViewController, UITableViewDelegate, UITableViewDataSo
     var objVehicle: Vehicle!
     @IBOutlet weak var tblVehicleDetails: UITableView!
     var arrPropertyList = ["Vin", "Make & Model", "Color", "Car Type"]
+    @IBOutlet weak var viewMainContainer: UIView!
     
     //MARK: View Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        objCommonFunctions.setNavigationControllerApperance(title: objVehicle.makeAndModel!, forViewController: self)
         self.tblVehicleDetails.register(VehicleDetailsTVCell.nib, forCellReuseIdentifier: VehicleDetailsTVCell.idetifier)
+        self.view.backgroundColor = objCommonFunctions.getViewBackGroundColor()
+        self.viewMainContainer.layer.cornerRadius = 10.0
+        self.tblVehicleDetails.isScrollEnabled = false
     }
 
     //MARK: Tableview methods
@@ -30,7 +33,6 @@ class VehicleDetailsVC: UIViewController, UITableViewDelegate, UITableViewDataSo
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 50
     }
-    
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: VehicleDetailsTVCell.idetifier, for: indexPath) as! VehicleDetailsTVCell
