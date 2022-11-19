@@ -19,19 +19,12 @@ class VehiclesListVC: UIViewController, UITableViewDataSource, UITableViewDelega
     
     var arrVehiclesList: [Vehicle]?
     private var objVehicleViewModel = VehicleViewModel()
+    private var objCommonFunctions = CommonFunctions()
     
     //MARK: View Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        let appearance = UINavigationBarAppearance()
-        appearance.configureWithOpaqueBackground()
-        appearance.backgroundColor = UIColor.systemBlue
-        appearance.titleTextAttributes = [.foregroundColor: UIColor.white]
-        navigationItem.standardAppearance = appearance
-        navigationItem.scrollEdgeAppearance = appearance
-        navigationItem.compactAppearance = appearance
-
+        objCommonFunctions.setNavigationControllerApperance(title: "Vehicle List", forViewController: self)
         self.tblVehiclesList.delegate = self
         self.tblVehiclesList.dataSource = self
         self.tblVehiclesList.sectionHeaderTopPadding = 0
@@ -78,7 +71,7 @@ class VehiclesListVC: UIViewController, UITableViewDataSource, UITableViewDelega
             objVehicleViewModel.getVehiclesList(size: sizeOfData)
             setupBinderForVehicleListAPI()
         } else {
-            
+            objCommonFunctions.showAlertMessageWithNoAction(message: "Please insert valid number.", forViewController: self)
         }
     }
     
@@ -123,8 +116,9 @@ class VehiclesListVC: UIViewController, UITableViewDataSource, UITableViewDelega
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+        let objVehicleDetails = storyboard?.instantiateViewController(withIdentifier: "VehicleDetailsVC") as! VehicleDetailsVC
+        objVehicleDetails.objVehicle = self.arrVehiclesList?[indexPath.row]
+        self.navigationController?.pushViewController(objVehicleDetails, animated: true)
     }
-
 }
 

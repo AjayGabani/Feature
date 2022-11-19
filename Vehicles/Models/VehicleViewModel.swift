@@ -27,6 +27,15 @@ class VehicleViewModel {
             self.error.value = failureMsg
         })
     }
+    
+    func sortArrVehiclesList(fieldName: String) -> [Vehicle] {
+        if fieldName == "" {
+            arrVehiclesList = arrVehiclesList?.sorted(by: {$0.vin! < $1.vin!})
+        } else {
+            arrVehiclesList = arrVehiclesList?.sorted(by: {$0.carType! < $1.carType!})
+        }
+        return arrVehiclesList
+    }
 }
 
 struct getVehicleListRequest: Codable {
